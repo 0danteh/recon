@@ -19,3 +19,4 @@ def remove_duplicates():
     
     except FileNotFoundError:
         print("File not found. Please make sure the file exists.")
+remove_duplicates()
