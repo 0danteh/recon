@@ -3,3 +3,4 @@ def remove_duplicates():
     file_name = input("Enter the name of the .txt file: ")
     try:
         with open(file_name, 'r') as file:
+            lines = file.readlines()
