@@ -8,3 +8,4 @@ def remove_duplicates():
             with open(file_path, 'r') as file:
                 lines = file.readlines()
 
+            initial_count = len(lines)
