@@ -4,3 +4,5 @@ def remove_duplicates():
     try:
         with open(file_name, 'r') as file:
             lines = file.readlines()
+            
+        initial_count = len(lines)
