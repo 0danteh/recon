@@ -6,3 +6,4 @@ def remove_duplicates():
             lines = file.readlines()
             
         initial_count = len(lines)
+        unique_lines = list(set(lines))
