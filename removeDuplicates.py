@@ -5,3 +5,4 @@ def remove_duplicates():
     file_path = input("Enter the full path to the folder and the file name: ")
     if os.path.exists(file_path):
         try:
+            with open(file_path, 'r') as file:
