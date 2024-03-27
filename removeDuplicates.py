@@ -7,3 +7,5 @@ def remove_duplicates():
             
         initial_count = len(lines)
         unique_lines = list(set(lines))
+        
+        with open(file_name, 'w') as file:
