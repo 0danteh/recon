@@ -16,3 +16,5 @@ def remove_duplicates():
         
         print(f"{duplicates_removed} duplicates were removed.")
         print(f"Initial count: {initial_count}, Final count: {final_count}")
+    
+    except FileNotFoundError:
