@@ -11,3 +11,10 @@ def remove_duplicates(file_name):
     print(f"{duplicates_count} duplicates were deleted.")
     print(f"Number of items at the beginning: {len(lines)}, Number of items at the end: {len(unique_lines)}")
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Remove duplicates from a text file')
+    parser.add_argument('-n', '--name', type=str, help='Name of the file')
+    parser.add_argument('-e', '--extension', type=str, help='File extension')
+    parser.add_argument('-h', '--help', action='store_true', help='Display help message')
+    args = parser.parse_args()
+
