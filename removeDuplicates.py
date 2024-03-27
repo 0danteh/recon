@@ -18,7 +18,22 @@ if __name__ == "__main__":
     parser.add_argument('-h', '--help', action='store_true', help='Display help message')
     args = parser.parse_args()
 
+    name = """
+
+    ______                               ______             _ _           _            
+    | ___ \                              |  _  \           | (_)         | |           
+    | |_/ /___ _ __ ___   _____   _____  | | | |_   _ _ __ | |_  ___ __ _| |_ ___  ___ 
+    |    // _ \ '_ ` _ \ / _ \ \ / / _ \ | | | | | | | '_ \| | |/ __/ _` | __/ _ \/ __|
+    | |\ \  __/ | | | | | (_) \ V /  __/ | |/ /| |_| | |_) | | | (_| (_| | ||  __/\__ \
+    \_| \_\___|_| |_| |_|\___/ \_/ \___| |___/  \__,_| .__/|_|_|\___\__,_|\__\___||___/
+                                                    | |                               
+                                                    |_|                               
+
+
+    """
+
     if args.help:
+        print(name)
         print("This script removes duplicates from a text file.")
         print("Flags:")
         print("-n: Stands for 'name' (name of the file)")
