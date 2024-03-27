@@ -18,3 +18,12 @@ if __name__ == "__main__":
     parser.add_argument('-h', '--help', action='store_true', help='Display help message')
     args = parser.parse_args()
 
+    if args.help:
+        print("This script removes duplicates from a text file.")
+        print("Flags:")
+        print("-n: Stands for 'name' (name of the file)")
+        print("-e: Stands for 'extension' (for other extensions)")
+        print("-h: Stands for 'help' (display help message)")
+    else:
+        file_name = args.name + "." + args.extension if args.extension else args.name + ".txt"
+        remove_duplicates(file_name)
