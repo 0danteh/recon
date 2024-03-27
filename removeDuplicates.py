@@ -15,3 +15,4 @@ def remove_duplicates():
                 file.writelines(unique_lines)
                 
             duplicates_removed = initial_count - len(unique_lines)
+            final_count = len(unique_lines)
