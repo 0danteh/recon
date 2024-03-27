@@ -38,5 +38,9 @@ if __name__ == "__main__":
         print("-e: Stands for 'extension' (for other extensions)")
         print("-a: Stands for 'about' (display help message)")
     else:
-        file_name = args.name + "." + args.extension if args.extension else args.name + ".txt"
-        remove_duplicates(file_name)
+        file_name = f"{args.name}.{args.extension}" if args.extension else f"{args.name}.txt" if args.name else None
+
+        if file_name:
+            remove_duplicates(file_name)
+        else:
+            print("Please provide a valid file name.")
