@@ -20,3 +20,5 @@ def remove_duplicates():
             print(f"Initial count: {initial_count}, Final count: {final_count}")
             
         except FileNotFoundError:
+            print("Error: File not found or unable to read the file.")
+    else:
