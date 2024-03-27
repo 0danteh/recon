@@ -6,3 +6,5 @@ def remove_duplicates():
     if os.path.exists(file_path):
         try:
             with open(file_path, 'r') as file:
+                lines = file.readlines()
+
