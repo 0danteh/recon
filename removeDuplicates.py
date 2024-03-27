@@ -17,3 +17,4 @@ def remove_duplicates():
             duplicates_removed = initial_count - len(unique_lines)
             final_count = len(unique_lines)
             print(f"{duplicates_removed} duplicates were removed.")
+            print(f"Initial count: {initial_count}, Final count: {final_count}")
