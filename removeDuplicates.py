@@ -22,3 +22,6 @@ def remove_duplicates():
         except FileNotFoundError:
             print("Error: File not found or unable to read the file.")
     else:
+        print("Error: The specified file path does not exist. Please check the path and file name.")
+
+remove_duplicates()
