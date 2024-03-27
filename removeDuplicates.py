@@ -15,7 +15,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Remove duplicates from a text file')
     parser.add_argument('-n', '--name', type=str, help='Name of the file')
     parser.add_argument('-e', '--extension', type=str, help='File extension')
-    parser.add_argument('-h', '--help', action='store_true', help='Display help message')
+    parser.add_argument('-a', '--about', action='store_true', help='Display help message')
     args = parser.parse_args()
 
     name = """
@@ -30,13 +30,13 @@ if __name__ == "__main__":
 
     """
 
-    if args.help:
+    if args.about:
         print(name)
         print("This script removes duplicates from a text file.")
         print("Flags:")
         print("-n: Stands for 'name' (name of the file)")
         print("-e: Stands for 'extension' (for other extensions)")
-        print("-h: Stands for 'help' (display help message)")
+        print("-a: Stands for 'about' (display help message)")
     else:
         file_name = args.name + "." + args.extension if args.extension else args.name + ".txt"
         remove_duplicates(file_name)
