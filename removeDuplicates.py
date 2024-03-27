@@ -9,3 +9,4 @@ def remove_duplicates():
         unique_lines = list(set(lines))
         
         with open(file_name, 'w') as file:
+            file.writelines(unique_lines)
